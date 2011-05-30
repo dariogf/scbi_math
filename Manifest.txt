@@ -4,6 +4,9 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/scbi_math.rb
+lib/scbi_math/array_extras.rb
+lib/scbi_math/float_extras.rb
+lib/scbi_math/scbi_narray.rb
 script/console
 script/destroy
 script/generate

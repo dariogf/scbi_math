@@ -1,32 +1,46 @@
 = scbi_math
 
-* http://github.com/#{github_username}/#{project_name}
+* http://www.scbi.uma.es/downloads
 
 == DESCRIPTION:
 
-FIX (describe your package)
+scbi_math is a ruby gem based on narray to do some additional statistics, 
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Calculates MAD (Mean absolute deviation) based on mean
+* Calculates MAD (Median absolute deviation) based on median
+* Calculates a FAT mode using a window_size to find the mode that accumulates more frequency on the sample.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  # collect an array
+  my_array=(1..40).collect.to_a
+
+  # create a SCBINArray object
+  na=ScbiNArray.to_na(my_array)
+
+  puts na.mad_median
+
+  puts na.mad_mean
+
+  puts na.fat_mode
+
+  # There are also a set of statistics predefined by the narray class
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* narray gem
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* sudo gem install scbi_math
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2011 FIXME full name
+Copyright (c) 2011 Dario Guerrero
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
